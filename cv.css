@@ -1,0 +1,400 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Tahoma, sans-serif;
+    background-color: beige;
+
+
+}
+@media screen and (min-width: 480px) {
+    /*---------------------------------*/
+    header {
+        min-height: 350px;
+        max-width: 1500px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        border: 3px solid white;
+        background-color: #10D2EF;
+        padding: 10px;
+        margin: 10px;
+        border-radius: 15px;
+    }
+
+    #foto {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background: #10D2EF;
+    }
+
+    img:hover{
+        -o-transition:.5s;
+        -ms-transition:.5s;
+        -moz-transition:.5s;
+        -webkit-transition:.5s;
+        transition:.5s;
+        box-shadow: 10px 10px 5px #888888;
+    }
+
+
+    #info {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        border: 2px solid black;
+        height: auto;
+        width: 600px;
+        padding: 10px;
+        border-radius: 15px;
+
+    }
+
+    /*---------------------------------*/
+    main1 {
+        min-height: 350px;
+        max-width: 1500px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        border: 3px solid white;
+        background-color: #3DBAC2;
+        padding: 10px;
+        margin: 10px;
+        border-radius: 15px;
+
+    }
+
+    .box1 {
+        border: 3px solid black;
+        padding: 10px;
+
+    }
+
+    .vaardigheden {
+        display: flex;
+        flex-direction: row;
+        border-radius: 15px;
+
+    }
+
+    #v1 {
+        padding: 10px;
+        border-left: 3px solid black;
+        border-top: 3px solid black;
+        border-bottom: 3px solid black;
+        border-bottom-left-radius: 15px;
+        border-top-left-radius: 15px;
+
+    }
+
+    #v2 {
+        padding: 10px;
+        border-right: 3px solid black;
+        border-top: 3px solid black;
+        border-bottom: 3px solid black;
+        border-bottom-right-radius: 15px;
+        border-top-right-radius: 15px;
+
+    }
+
+
+    .circleG {
+        display: block;
+        height: 30px;
+        width: 80px;
+        line-height: 30px;
+
+        -moz-border-radius: 30px;
+        border-radius: 30px;
+
+        background-color: green;
+        color: white;
+        text-align: center;
+        font-size: 1em;
+    }
+
+    .circleR {
+        display: block;
+        height: 30px;
+        width: 80px;
+        line-height: 30px;
+        -moz-border-radius: 30px;
+        border-radius: 30px;
+        background-color: red;
+        color: white;
+        text-align: center;
+        font-size: 1em;
+    }
+
+    /*---------------------------------*/
+    main2 {
+        min-height: 350px;
+        max-width: 1500px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        border: 3px solid white;
+        background-color: #629D9D;
+        padding: 10px;
+        margin: 10px;
+        border-radius: 15px;
+    }
+
+    #talen {
+        width: 150px;
+        height: 100px;
+        border: 3px solid black;
+        border-radius: 15px;
+        padding: 10px;
+    }
+
+
+    /*---------------------------------*/
+    table {
+
+        table-layout: fixed;
+        border-collapse: collapse;
+        border: 3px solid #000;
+        border-radius: 15px;
+        text-align: center;
+
+    }
+
+    th, td {
+        border: 1px solid #000;
+        padding: 5px;
+
+    }
+
+    tr:nth-child(1) td:nth-child(1),
+    tr:nth-child(2) td:nth-child(1),
+    tr:nth-child(3) td:nth-child(1),
+    tr:nth-child(4) td:nth-child(1),
+    tr:nth-child(5) td:nth-child(1) {
+        background-color: yellowgreen;
+    }
+
+    /*---------------------------------*/
+    footer {
+        width: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 10px;
+    }
+
+    /*---------------------------------*/
+
+
+    #knop a {
+        text-decoration: none;
+        background-color: coral;
+        color: black;
+        padding-bottom: 5px;
+        padding-top: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+/*---------------------------------*/
+@media screen and (max-width: 480px) {
+    header {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        border: 3px solid white;
+        background-color: #10D2EF;
+        padding: 10px;
+        margin: 10px;
+        border-radius: 15px;
+    }
+    #foto {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background: #10D2EF;
+    }
+
+    img:hover{
+        -o-transition:.5s;
+        -ms-transition:.5s;
+        -moz-transition:.5s;
+        -webkit-transition:.5s;
+        transition:.5s;
+        box-shadow: 10px 10px 5px #888888;
+    }
+
+    #info {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        border: 2px solid black;
+        height: auto;
+        width: auto;
+        padding: 10px;
+        margin: 10px;
+        border-radius: 15px;
+
+    }
+
+    /*---------------------------------*/
+    main1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        border: 3px solid white;
+        background-color: #3DBAC2;
+        padding: 10px;
+        margin: 10px;
+        border-radius: 15px;
+
+    }
+
+    .box1 {
+        border: 3px solid black;
+        padding: 10px;
+
+    }
+
+    .vaardigheden {
+        display: flex;
+        flex-direction: row;
+        border-radius: 15px;
+        margin: 10px;
+
+    }
+
+    #v1 {
+        padding: 10px;
+        border-left: 3px solid black;
+        border-top: 3px solid black;
+        border-bottom: 3px solid black;
+        border-bottom-left-radius: 15px;
+        border-top-left-radius: 15px;
+
+    }
+
+    #v2 {
+        padding: 10px;
+        border-right: 3px solid black;
+        border-top: 3px solid black;
+        border-bottom: 3px solid black;
+        border-bottom-right-radius: 15px;
+        border-top-right-radius: 15px;
+
+    }
+
+
+    .circleG {
+        display: block;
+        height: 30px;
+        width: 80px;
+        line-height: 30px;
+
+        -moz-border-radius: 30px;
+        border-radius: 30px;
+
+        background-color: green;
+        color: white;
+        text-align: center;
+        font-size: 1em;
+    }
+
+    .circleR {
+        display: block;
+        height: 30px;
+        width: 80px;
+        line-height: 30px;
+        -moz-border-radius: 30px;
+        border-radius: 30px;
+        background-color: red;
+        color: white;
+        text-align: center;
+        font-size: 1em;
+    }
+
+    /*---------------------------------*/
+    main2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        border: 3px solid white;
+        background-color: #629D9D;
+        padding: 10px;
+        margin: 10px;
+        border-radius: 15px;
+    }
+
+    #talen {
+        width: 150px;
+        height: 100px;
+        border: 3px solid black;
+        border-radius: 15px;
+        padding: 10px;
+        margin: 10px;
+    }
+
+
+    /*---------------------------------*/
+    table {
+
+        table-layout: fixed;
+        border-collapse: collapse;
+        border: 3px solid #000;
+        border-radius: 15px;
+        text-align: center;
+
+
+    }
+
+    th, td {
+        border: 1px solid #000;
+        padding: 5px;
+
+    }
+
+    tr:nth-child(1) td:nth-child(1),
+    tr:nth-child(2) td:nth-child(1),
+    tr:nth-child(3) td:nth-child(1),
+    tr:nth-child(4) td:nth-child(1),
+    tr:nth-child(5) td:nth-child(1) {
+        background-color: yellowgreen;
+    }
+
+    /*---------------------------------*/
+    footer {
+        width: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 10px;
+    }
+
+    /*---------------------------------*/
+    #knop {
+
+    }
+
+    a {
+
+        text-decoration: none;
+        background-color: coral;
+        color: black;
+        border-radius: 5px;
+        padding-bottom: 5px;
+        padding-top: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+
+
+
